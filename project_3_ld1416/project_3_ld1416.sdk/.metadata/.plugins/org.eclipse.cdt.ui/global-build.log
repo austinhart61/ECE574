@@ -1,0 +1,946 @@
+21:33:44 **** Build of project c_dl1416_bsp ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_3/src"
+make -C microblaze_I/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_9/src"
+make -C microblaze_I/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_7/src"
+make -C microblaze_I/libsrc/iomodule_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v7_0/src"
+make -C microblaze_I/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_3/src"
+make -C microblaze_I/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_9/src"
+make -C microblaze_I/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_7/src"
+make -C microblaze_I/libsrc/iomodule_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:169:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:215:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:51,
+                 from xiomodule.h:263,
+                 from xiomodule.c:59:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:352:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:128:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:392:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:442:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:488:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:532:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:637:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:128:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:719:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:165:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+"Running Make libs in microblaze_I/libsrc/standalone_v7_0/src"
+make -C microblaze_I/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+21:33:59 **** Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2696	    268	   3108	   6072	   17b8	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:34:09 **** Clean-only build of configuration Debug for project c_dl1416 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  c_dl1416.elf.size  c_dl1416.elf
+' '
+21:34:10 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2696	    268	   3108	   6072	   17b8	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:35:31 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2696	    268	   3108	   6072	   17b8	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:37:57 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'main':
+../src/dl1416.c:31:2: error: 'data' undeclared (first use in this function)
+  data = XIOModule_Initialize(&iomodule, XPAR_IOMODULE_0_DEVICE_ID);
+  ^~~~
+../src/dl1416.c:31:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/dl1416.c:26:18: warning: unused variable 'chars02' [-Wunused-variable]
+     u32 chars01, chars02;
+                  ^~~~~~~
+../src/dl1416.c:26:9: warning: unused variable 'chars01' [-Wunused-variable]
+     u32 chars01, chars02;
+         ^~~~~~~
+make: *** [src/subdir.mk:26: src/dl1416.o] Error 1
+21:38:07 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'main':
+../src/dl1416.c:26:24: warning: unused variable 'chars02' [-Wunused-variable]
+     u32 data, chars01, chars02;
+                        ^~~~~~~
+../src/dl1416.c:26:15: warning: unused variable 'chars01' [-Wunused-variable]
+     u32 data, chars01, chars02;
+               ^~~~~~~
+../src/dl1416.c:26:9: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+     u32 data, chars01, chars02;
+         ^~~~
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3828	    360	   3116	   7304	   1c88	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:43:16 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'main':
+../src/dl1416.c:26:24: warning: variable 'chars02' set but not used [-Wunused-but-set-variable]
+     u32 data, chars01, chars02;
+                        ^~~~~~~
+../src/dl1416.c:26:15: warning: variable 'chars01' set but not used [-Wunused-but-set-variable]
+     u32 data, chars01, chars02;
+               ^~~~~~~
+../src/dl1416.c:26:9: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+     u32 data, chars01, chars02;
+         ^~~~
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3764	    360	   3116	   7240	   1c48	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:45:03 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'main':
+../src/dl1416.c:42:14: error: invalid type argument of unary '*' (have 'u32' {aka 'long unsigned int'})
+   draw_frame(*chars01, *chars02);
+              ^~~~~~~~
+../src/dl1416.c:42:24: error: invalid type argument of unary '*' (have 'u32' {aka 'long unsigned int'})
+   draw_frame(*chars01, *chars02);
+                        ^~~~~~~~
+make: *** [src/subdir.mk:26: src/dl1416.o] Error 1
+21:45:15 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3828	    360	   3116	   7304	   1c88	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:47:47 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3828	    360	   3116	   7304	   1c88	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:56:21 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9136	    724	   3116	  12976	   32b0	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:57:26 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9160	    724	   3116	  13000	   32c8	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:57:41 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'main':
+../src/dl1416.c:46:3: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+   strsep
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9252	    724	   3120	  13096	   3328	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:58:17 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9252	    724	   3120	  13096	   3328	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+22:22:28 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9256	    724	   3116	  13096	   3328	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+22:23:20 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9256	    724	   3116	  13096	   3328	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+20:56:24 **** Clean-only build of configuration Debug for project c_dl1416 ****
+make clean 
+rm -rf  ./src/dl1416.o ./src/platform.o  ./src/dl1416.d ./src/platform.d  c_dl1416.elf.size  c_dl1416.elf
+' '
+20:56:30 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'draw_frame':
+../src/dl1416.c:34:5: error: 'test' undeclared (first use in this function)
+  if(test & 0b00000000000000000000000000000001){
+     ^~~~
+../src/dl1416.c:34:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/dl1416.c:32:7: warning: unused variable 'digit4' [-Wunused-variable]
+  char digit4[9][9] = {{' '}};
+       ^~~~~~
+../src/dl1416.c:31:7: warning: unused variable 'digit3' [-Wunused-variable]
+  char digit3[9][9] = {{' '}};
+       ^~~~~~
+../src/dl1416.c:30:7: warning: variable 'digit2' set but not used [-Wunused-but-set-variable]
+  char digit2[9][9] = {{' '}};
+       ^~~~~~
+../src/dl1416.c:29:7: warning: variable 'digit' set but not used [-Wunused-but-set-variable]
+  char digit[9][9] = {{' '}};
+       ^~~~~
+make: *** [src/subdir.mk:26: src/dl1416.o] Error 1
+21:02:24 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c:24:22: error: array type has incomplete element type 'char[]'
+ void write_char(char digit[][], char digit2[][]){
+                      ^~~~~
+../src/dl1416.c:24:22: note: declaration of 'digit' as multidimensional array must have bounds for all dimensions except the first
+../src/dl1416.c:24:38: error: array type has incomplete element type 'char[]'
+ void write_char(char digit[][], char digit2[][]){
+                                      ^~~~~~
+../src/dl1416.c:24:38: note: declaration of 'digit2' as multidimensional array must have bounds for all dimensions except the first
+../src/dl1416.c: In function 'write_char':
+../src/dl1416.c:25:5: error: 'test' undeclared (first use in this function)
+  if(test & 0b00000000000000000000000000000001){
+     ^~~~
+../src/dl1416.c:25:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/dl1416.c: In function 'draw_frame':
+../src/dl1416.c:226:13: error: type of formal parameter 1 is incomplete
+  write_char(digit, digit2);
+             ^~~~~
+../src/dl1416.c:226:20: error: type of formal parameter 2 is incomplete
+  write_char(digit, digit2);
+                    ^~~~~~
+../src/dl1416.c:227:13: error: type of formal parameter 1 is incomplete
+  write_char(digit3, digit4);
+             ^~~~~~
+../src/dl1416.c:227:21: error: type of formal parameter 2 is incomplete
+  write_char(digit3, digit4);
+                     ^~~~~~
+make: *** [src/subdir.mk:26: src/dl1416.o] Error 1
+21:04:20 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c:24:33: error: array type has incomplete element type 'char[]'
+ void write_char(int chunk, char digit[][], char digit2[][]){
+                                 ^~~~~
+../src/dl1416.c:24:33: note: declaration of 'digit' as multidimensional array must have bounds for all dimensions except the first
+../src/dl1416.c:24:49: error: array type has incomplete element type 'char[]'
+ void write_char(int chunk, char digit[][], char digit2[][]){
+                                                 ^~~~~~
+../src/dl1416.c:24:49: note: declaration of 'digit2' as multidimensional array must have bounds for all dimensions except the first
+../src/dl1416.c: In function 'draw_frame':
+../src/dl1416.c:226:13: warning: passing argument 1 of 'write_char' makes integer from pointer without a cast [-Wint-conversion]
+  write_char(digit, digit2);
+             ^~~~~
+../src/dl1416.c:24:21: note: expected 'int' but argument is of type 'char (*)[9]'
+ void write_char(int chunk, char digit[][], char digit2[][]){
+                 ~~~~^~~~~
+../src/dl1416.c:226:20: error: type of formal parameter 2 is incomplete
+  write_char(digit, digit2);
+                    ^~~~~~
+../src/dl1416.c:226:2: error: too few arguments to function 'write_char'
+  write_char(digit, digit2);
+  ^~~~~~~~~~
+../src/dl1416.c:24:6: note: declared here
+ void write_char(int chunk, char digit[][], char digit2[][]){
+      ^~~~~~~~~~
+../src/dl1416.c:227:13: warning: passing argument 1 of 'write_char' makes integer from pointer without a cast [-Wint-conversion]
+  write_char(digit3, digit4);
+             ^~~~~~
+../src/dl1416.c:24:21: note: expected 'int' but argument is of type 'char (*)[9]'
+ void write_char(int chunk, char digit[][], char digit2[][]){
+                 ~~~~^~~~~
+../src/dl1416.c:227:21: error: type of formal parameter 2 is incomplete
+  write_char(digit3, digit4);
+                     ^~~~~~
+../src/dl1416.c:227:2: error: too few arguments to function 'write_char'
+  write_char(digit3, digit4);
+  ^~~~~~~~~~
+../src/dl1416.c:24:6: note: declared here
+ void write_char(int chunk, char digit[][], char digit2[][]){
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:26: src/dl1416.o] Error 1
+21:04:47 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'draw_frame':
+../src/dl1416.c:226:13: warning: passing argument 1 of 'write_char' makes integer from pointer without a cast [-Wint-conversion]
+  write_char(digit, digit2);
+             ^~~~~
+../src/dl1416.c:24:21: note: expected 'int' but argument is of type 'char (*)[9]'
+ void write_char(int chunk, char digit[][9], char digit2[][9]){
+                 ~~~~^~~~~
+../src/dl1416.c:226:2: error: too few arguments to function 'write_char'
+  write_char(digit, digit2);
+  ^~~~~~~~~~
+../src/dl1416.c:24:6: note: declared here
+ void write_char(int chunk, char digit[][9], char digit2[][9]){
+      ^~~~~~~~~~
+../src/dl1416.c:227:13: warning: passing argument 1 of 'write_char' makes integer from pointer without a cast [-Wint-conversion]
+  write_char(digit3, digit4);
+             ^~~~~~
+../src/dl1416.c:24:21: note: expected 'int' but argument is of type 'char (*)[9]'
+ void write_char(int chunk, char digit[][9], char digit2[][9]){
+                 ~~~~^~~~~
+../src/dl1416.c:227:2: error: too few arguments to function 'write_char'
+  write_char(digit3, digit4);
+  ^~~~~~~~~~
+../src/dl1416.c:24:6: note: declared here
+ void write_char(int chunk, char digit[][9], char digit2[][9]){
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:26: src/dl1416.o] Error 1
+21:05:11 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'draw_frame':
+../src/dl1416.c:226:13: warning: passing argument 1 of 'write_char' makes integer from pointer without a cast [-Wint-conversion]
+  write_char(&chunk1, digit, digit2);
+             ^~~~~~~
+../src/dl1416.c:24:21: note: expected 'int' but argument is of type 'u32 **' {aka 'long unsigned int **'}
+ void write_char(int chunk, char digit[][9], char digit2[][9]){
+                 ~~~~^~~~~
+../src/dl1416.c:227:13: warning: passing argument 1 of 'write_char' makes integer from pointer without a cast [-Wint-conversion]
+  write_char(&chunk2, digit3, digit4);
+             ^~~~~~~
+../src/dl1416.c:24:21: note: expected 'int' but argument is of type 'u32 **' {aka 'long unsigned int **'}
+ void write_char(int chunk, char digit[][9], char digit2[][9]){
+                 ~~~~^~~~~
+'Finished building: ../src/dl1416.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7140	    360	   3116	  10616	   2978	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:06:08 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7152	    360	   3112	  10624	   2980	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:10:19 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'draw_frame':
+../src/dl1416.c:239:17: error: 'j' undeclared (first use in this function)
+    if(digit2[i][j] == '#'){
+                 ^
+../src/dl1416.c:239:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/dl1416.o] Error 1
+21:10:25 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'draw_frame':
+../src/dl1416.c:247:17: error: 'j' undeclared (first use in this function)
+    if(digit3[i][j] == '#'){
+                 ^
+../src/dl1416.c:247:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/dl1416.o] Error 1
+21:10:33 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26148	   1400	   3180	  30728	   7808	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+21:11:51 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: c_dl1416.elf section `.data' will not fit in region `ilmb_cntlr_Mem_dlmb_cntlr_Mem'
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_Mem_dlmb_cntlr_Mem' overflowed by 3296 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: c_dl1416.elf] Error 1
+21:22:32 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: c_dl1416.elf section `.heap' will not fit in region `ilmb_cntlr_Mem_dlmb_cntlr_Mem'
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_Mem_dlmb_cntlr_Mem' overflowed by 2712 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: c_dl1416.elf] Error 1
+21:22:50 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: c_dl1416.elf section `.data' will not fit in region `ilmb_cntlr_Mem_dlmb_cntlr_Mem'
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_Mem_dlmb_cntlr_Mem' overflowed by 3296 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: c_dl1416.elf] Error 1
+21:53:25 **** Auto Build of project c_dl1416_bsp ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_3/src"
+make -C microblaze_I/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/cpu_v2_9/src"
+make -C microblaze_I/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_7/src"
+make -C microblaze_I/libsrc/iomodule_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_I/libsrc/standalone_v7_0/src"
+make -C microblaze_I/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_I/libsrc/bram_v4_3/src"
+make -C microblaze_I/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_9/src"
+make -C microblaze_I/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_7/src"
+make -C microblaze_I/libsrc/iomodule_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iomodule"
+xiomodule.c: In function 'XIOModule_Initialize':
+xiomodule.c:169:18: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                  ^
+xiomodule.c:215:19: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   for (Id = 0; Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE; Id++) {
+                   ^
+In file included from ../../../include/xstatus.h:51,
+                 from xiomodule.h:263,
+                 from xiomodule.c:59:
+xiomodule.c: In function 'XIOModule_Connect':
+xiomodule.c:352:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:128:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disconnect':
+xiomodule.c:392:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Enable':
+xiomodule.c:442:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Disable':
+xiomodule.c:488:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_Acknowledge':
+xiomodule.c:532:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_ConnectFastHandler':
+xiomodule.c:637:23: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertNonvoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                       ^
+../../../include/xil_assert.h:128:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule.c: In function 'XIOModule_SetNormalIntrMode':
+xiomodule.c:719:20: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  Xil_AssertVoid(Id < XPAR_IOMODULE_INTC_MAX_INTR_SIZE);
+                    ^
+../../../include/xil_assert.h:103:9: note: in definition of macro 'Xil_AssertVoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xiomodule_l.c: In function 'XIOModule_DeviceInterruptHandler':
+xiomodule_l.c:165:35: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+  for (IntrNumber = 0U; IntrNumber < XPAR_IOMODULE_INTC_MAX_INTR_SIZE;
+                                   ^
+"Running Make libs in microblaze_I/libsrc/standalone_v7_0/src"
+make -C microblaze_I/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+'Finished building libraries'
+21:53:44 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: c_dl1416.elf section `.data' will not fit in region `ilmb_cntlr_Mem_dlmb_cntlr_Mem'
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_Mem_dlmb_cntlr_Mem' overflowed by 3296 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: c_dl1416.elf] Error 1
+21:54:23 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'draw_frame':
+../src/dl1416.c:226:2: warning: implicit declaration of function 'write_char'; did you mean '_fwrite_r'? [-Wimplicit-function-declaration]
+  write_char(*chunk1, digit, digit2);
+  ^~~~~~~~~~
+  _fwrite_r
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: c_dl1416.elf section `.stack' will not fit in region `ilmb_cntlr_Mem_dlmb_cntlr_Mem'
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_Mem_dlmb_cntlr_Mem' overflowed by 920 bytes
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: ./src/dl1416.o: in function `draw_frame':
+C:\Users\austi\project_3_ld1416\project_3_ld1416.sdk\c_dl1416\Debug/../src/dl1416.c:226: undefined reference to `write_char'
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: C:\Users\austi\project_3_ld1416\project_3_ld1416.sdk\c_dl1416\Debug/../src/dl1416.c:227: undefined reference to `write_char'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: c_dl1416.elf] Error 1
+21:54:38 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: c_dl1416.elf section `.data' will not fit in region `ilmb_cntlr_Mem_dlmb_cntlr_Mem'
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_Mem_dlmb_cntlr_Mem' overflowed by 3296 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: c_dl1416.elf] Error 1
+21:55:38 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+../src/dl1416.c: In function 'draw_frame':
+../src/dl1416.c:248:12: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+     printf('#');
+            ^~~
+In file included from ../src/dl1416.c:15:
+c:\xilinx\sdk\2019.1\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:200:13: note: expected 'const char * restrict' but argument is of type 'int'
+ int printf (const char *__restrict, ...)
+             ^
+../src/dl1416.c:256:12: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+     printf('#');
+            ^~~
+In file included from ../src/dl1416.c:15:
+c:\xilinx\sdk\2019.1\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:200:13: note: expected 'const char * restrict' but argument is of type 'int'
+ int printf (const char *__restrict, ...)
+             ^
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: c_dl1416.elf section `.text' will not fit in region `ilmb_cntlr_Mem_dlmb_cntlr_Mem'
+c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_Mem_dlmb_cntlr_Mem' overflowed by 73584 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: c_dl1416.elf] Error 1
+21:57:45 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7920	    360	   3112	  11392	   2c80	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+23:41:20 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    360	   3116	  11456	   2cc0	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+00:22:20 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7980	    360	   3116	  11456	   2cc0	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+00:27:24 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    724	   3120	  17008	   4270	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+01:28:26 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    724	   3120	  17008	   4270	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+01:33:25 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    724	   3120	  17008	   4270	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '

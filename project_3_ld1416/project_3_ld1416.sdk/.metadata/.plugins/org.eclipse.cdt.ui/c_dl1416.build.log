@@ -1,0 +1,21 @@
+01:33:25 **** Auto Build of configuration Debug for project c_dl1416 ****
+make all 
+'Building file: ../src/dl1416.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dl1416.o" -I../../c_dl1416_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dl1416.d" -MT"src/dl1416.o" -o "src/dl1416.o" "../src/dl1416.c"
+'Finished building: ../src/dl1416.c'
+' '
+'Building target: c_dl1416.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../c_dl1416_bsp/microblaze_I/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "c_dl1416.elf"  ./src/dl1416.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: c_dl1416.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size c_dl1416.elf  |tee "c_dl1416.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13164	    724	   3120	  17008	   4270	c_dl1416.elf
+'Finished building: c_dl1416.elf.size'
+' '
+
+01:33:26 Build Finished (took 1s.199ms)
+

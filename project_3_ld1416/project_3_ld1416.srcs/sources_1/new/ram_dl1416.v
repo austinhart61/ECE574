@@ -41,10 +41,10 @@ module ram_dl1416(
     always @(negedge wr) begin
         if(!ce && cu) begin
             case(addr)
-                2'b00: #Tw ram[addr] = data_in;
-                2'b01: #Tw ram[addr] = data_in;
-                2'b10: #Tw ram[addr] = data_in;
-                2'b11: #Tw ram[addr] = data_in;
+                2'b00: ram[addr] = data_in;
+                2'b01: ram[addr] = data_in;
+                2'b10: ram[addr] = data_in;
+                2'b11: ram[addr] = data_in;
             endcase
         end
         
